@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color, #f0f0f0);
+}
+
+.game-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    height: 0;
+    padding-bottom: 60%;
+    background-color: var(--game-background-color, #333);
+    border: 2px solid var(--game-border-color, #fff);
+    overflow: hidden;
+    margin: auto;
+}
+
+.ball, .paddle {
+    position: absolute;
+    width: var(--element-size, 20px);
+    height: var(--element-height, 80px);
+    background-color: var(--element-color, #fff);
+}
+
+.ball {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.paddle {
+    background-color: var(--element-color, #fff);
+}
+
+#leftPaddle {
+    left: 10px;
+}
+
+#rightPaddle {
+    right: 10px;
+}
